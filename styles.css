@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .timeline {
+    display: flex; /* Cambiamos a flex para mostrar en línea horizontal */
+    overflow-x: auto; /* Permitimos desplazamiento horizontal si es necesario */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 800px;
+  }
+  
+  .point {
+    text-align: center;
+    flex: 0 0 auto; /* Establecemos tamaño fijo para que no se estiren */
+    padding: 0 10px; /* Espaciado entre puntos */
+  }
+  
+  .point img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .point img:hover {
+    transform: scale(1.1);
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
